@@ -1,4 +1,4 @@
-package c.m.algos
+package c.m.algos.maxnum
 
 import c.m.algos.maxnum.MaxNumber
 import spock.lang.Specification
