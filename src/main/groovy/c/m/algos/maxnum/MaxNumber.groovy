@@ -1,4 +1,4 @@
-package c.m.algos
+package c.m.algos.maxnum
 
 class MaxNumber {
 

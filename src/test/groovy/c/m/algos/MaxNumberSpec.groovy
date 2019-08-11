@@ -1,5 +1,6 @@
 package c.m.algos
 
+import c.m.algos.maxnum.MaxNumber
 import spock.lang.Specification
 import spock.lang.Unroll
 
