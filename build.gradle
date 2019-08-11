@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+    id 'codenarc'
+}
+apply plugin: 'codenarc'
+codenarcMain {
+    configFile = rootProject.file('config/codenarc/ruleset.groovy')
+}
+
+codenarcTest {
+    configFile = rootProject.file('config/codenarc/rulesetTest.groovy')
+}
+group 'com.manchikanti'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.5.7'
+    compile group: 'org.codenarc', name: 'CodeNarc', version: '1.4'
+    testCompile 'org.spockframework:spock-core:1.3-groovy-2.5'
+}
