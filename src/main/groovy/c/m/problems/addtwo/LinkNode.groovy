@@ -16,6 +16,9 @@ class LinkNode {
     }
 
     static String toString(LinkNode linkNode) {
+        if (!linkNode) {
+            return 'null'
+        }
         StringBuilder sb = new StringBuilder()
         LinkNode currentNode = linkNode
         while (currentNode?.next) {
